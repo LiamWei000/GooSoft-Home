@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>GooSoft-Verse — Open Creative Technology</title>
+    <meta name="description"
+        content="GooSoft-Verse — open-source creative editor tools and platforms for designers, engineers, and studios." />
+    <meta name="keywords" content="GooSoft, editor, open source, creative tools, UI, UX, portfolio" />
+    <link rel="canonical" href="https://www.goosoft.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="GooSoft-Verse" />
+    <meta property="og:title" content="GooSoft-Verse — Open Creative Technology" />
+    <meta property="og:description"
+        content="Open-source creative editor tools and platforms for designers, engineers, and studios." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.goosoft.com/" />
+    <meta property="og:image" content="assets/images/og-image.webp" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GooSoft-Verse — Open Creative Technology" />
+    <meta name="twitter:description"
+        content="Open-source creative editor tools and platforms for designers, engineers, and studios." />
+    <meta name="twitter:image" content="assets/images/og-image.webp" />
+
+    <!-- JSON-LD: Organization + WebSite -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "GooSoft",
+    "url": "https://www.goosoft.com",
+    "logo": "https://www.goosoft.com/assets/images/logo.png",
+    "sameAs": []
+  }
+  </script>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Prefer non-blocking font load: use font-display swap (Google font link kept minimal) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Favicons (place appropriate files in assets/icons/) -->
+    <link rel="icon" href="assets/icons/favicon.ico" />
+</head>
+
+<body class="page" data-js-enabled="false">
+
+    <!-- Site header -->
+    <header class="site-header" role="banner">
+        <div class="container site-header__inner">
+            <a class="brand" href="/" aria-label="Go to homepage">
+                <img src="assets/images/logo-small.png" alt="GooSoft logo" class="brand__img" width="40" height="40" />
+                <span class="brand__title">GooSoft<span class="brand__accent">-Verse</span></span>
+            </a>
+
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav"
+                aria-label="Toggle navigation">
+                <span class="nav-toggle__bar" aria-hidden="true"></span>
+            </button>
+
+            <nav id="mainNav" class="nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="#about">Home</a></li>
+                    <li><a class="nav__link" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav__link" href="#case">Case Studies</a></li>
+                    <li><a class="nav__link" href="#skills">Skills</a></li>
+                    <li><a class="nav__link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content" class="main" role="main">
+
+        <!-- HERO: full-bleed, centered card -->
+        <section class="hero" aria-label="Hero section">
+            <div class="container hero__inner">
+                <div class="hero-card" role="region" aria-labelledby="hero-heading">
+                    <h1 id="hero-heading" class="hero-card__title">
+                        Build creative tools that empower creators — Open, modular, dependable.
+                    </h1>
+                    <p class="hero-card__subtitle">
+                        GooSoft-Verse crafts open-source editor technology, design systems, and production-ready tools
+                        for creators and teams.
+                    </p>
+
+                    <p class="hero-card__ctas">
+                        <a class="btn btn--primary" href="#portfolio">View Portfolio</a>
+                        <a class="btn btn--outline" href="#contact">Contact</a>
+                    </p>
+                </div>
+
+                <!-- Decorative hero image: use picture with WebP/AVIF, hero image is important for LCP so it loads eagerly -->
+                <picture class="hero__image" aria-hidden="true">
+                    <source srcset="assets/images/hero.avif 1x, assets/images/hero@2x.avif 2x" type="image/avif" />
+                    <source srcset="assets/images/hero.webp 1x, assets/images/hero@2x.webp 2x" type="image/webp" />
+                    <img src="assets/images/hero.jpg" alt="" width="1200" height="600" loading="eager"
+                        decoding="sync" />
+                </picture>
+            </div>
+        </section>
+
+        <!-- ABOUT (Home / "rooms" grid floor plan metaphor) -->
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="section-title">Welcome Home</h2>
+                <p class="section-lead">A minimal "Warm Home" metaphor — each card is a room that explains what GooSoft
+                    does.</p>
+
+                <div class="rooms-grid" role="list">
+                    <article class="room room--identity" role="listitem" aria-labelledby="room-identity-title">
+                        <h3 id="room-identity-title">Identity</h3>
+                        <p>Open-source-first, creator-centric tools with long-term maintainability.</p>
+                    </article>
+
+                    <article class="room room--mission" role="listitem" aria-labelledby="room-mission-title">
+                        <h3 id="room-mission-title">Mission</h3>
+                        <p>Empower creators with modular editors, clear APIs, and usable design systems.</p>
+                    </article>
+
+                    <article class="room room--services" role="listitem" aria-labelledby="room-services-title">
+                        <h3 id="room-services-title">Services</h3>
+                        <p>Editor engineering, UI systems, integration, UX research, and open-source maintenance.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section id="portfolio" class="portfolio" aria-labelledby="portfolio-heading">
+            <div class="container">
+                <h2 id="portfolio-heading" class="section-title">Portfolio</h2>
+                <p class="section-lead">Filterable project gallery — works, role, tech, and measurable impact.</p>
+
+                <div class="portfolio-controls" role="toolbar" aria-label="Portfolio filters">
+                    <button class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter-btn" data-filter="editor" aria-pressed="false">Editor</button>
+                    <button class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
+                    <button class="filter-btn" data-filter="tooling" aria-pressed="false">Tooling</button>
+                </div>
+
+                <div class="portfolio-grid" role="list">
+                    <!-- Project 1 -->
+                    <article id="project-1" class="project" role="listitem" data-category="editor">
+                        <a class="project__link" href="#project-1-details" aria-controls="project-1-details"
+                            aria-expanded="false">
+                            <figure class="project__media">
+                                <picture>
+                                    <source srcset="assets/images/project1.avif" type="image/avif" />
+                                    <source srcset="assets/images/project1.webp" type="image/webp" />
+                                    <img src="assets/images/project1.jpg" alt="Editor engine screenshot" loading="lazy"
+                                        decoding="async" width="800" height="450" />
+                                </picture>
+                                <figcaption class="sr-only">Editor Engine Prototype</figcaption>
+                            </figure>
+                            <div class="project__body">
+                                <h3 class="project__title">Editor Engine Prototype</h3>
+                                <p class="project__summary">Modular editor runtime with plugin graph. Role: Lead
+                                    engineer. Stack: C/C++, WebAssembly, JS.</p>
+                            </div>
+                        </a>
+
+                        <!-- Progressive enhancement: details tag works without JS to reveal full content -->
+                        <details id="project-1-details" class="project__details">
+                            <summary class="project__details-summary">View details</summary>
+                            <div class="project__details-body">
+                                <p><strong>Role:</strong> Lead engineer, architecture, UX integration.</p>
+                                <p><strong>Tech:</strong> WebAssembly, TypeScript, custom plugin runtime.</p>
+                                <p><strong>Impact:</strong> Reduced asset load times by 35% and editor startup by 42% in
+                                    field test.</p>
+                            </div>
+                        </details>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article id="project-2" class="project" role="listitem" data-category="web">
+                        <a class="project__link" href="#project-2-details" aria-controls="project-2-details"
+                            aria-expanded="false">
+                            <figure class="project__media">
+                                <picture>
+                                    <source srcset="assets/images/project2.avif" type="image/avif" />
+                                    <source srcset="assets/images/project2.webp" type="image/webp" />
+                                    <img src="assets/images/project2.jpg" alt="Creator portfolio system" loading="lazy"
+                                        decoding="async" width="800" height="450" />
+                                </picture>
+                            </figure>
+                            <div class="project__body">
+                                <h3 class="project__title">Creator Portfolio System</h3>
+                                <p class="project__summary">Static first, modular templates for creator websites. Role:
+                                    Product & engineering.</p>
+                            </div>
+                        </a>
+                        <details id="project-2-details" class="project__details">
+                            <summary class="project__details-summary">View details</summary>
+                            <div class="project__details-body">
+                                <p><strong>Role:</strong> Product lead & frontend engineering.</p>
+                                <p><strong>Tech:</strong> Static HTML, optimized images, lazy loading.</p>
+                                <p><strong>Impact:</strong> Achieved 98 performance score for lightweight portfolios;
+                                    improved conversion in trials by 18%.</p>
+                            </div>
+                        </details>
+                    </article>
+
+                    <!-- More project cards can be added following same pattern -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CASE STUDIES -->
+        <section id="case" class="cases" aria-labelledby="case-heading">
+            <div class="container">
+                <h2 id="case-heading" class="section-title">Case Studies</h2>
+
+                <article class="case" aria-labelledby="case-1-title">
+                    <h3 id="case-1-title">Open Editor Architecture — Problem → Solution → Impact</h3>
+                    <p><strong>Problem:</strong> Monolithic editors produced heavy startup times and limited extension
+                        points.</p>
+                    <p><strong>Solution:</strong> Re-architected as modular services with a lazy-load plugin runtime and
+                        minimal core.</p>
+                    <p><strong>Impact:</strong> Reduced startup by 42% and lowered memory overhead by 28% in targeted
+                        workloads.</p>
+                </article>
+
+                <!-- Optional second case study -->
+            </div>
+        </section>
+
+        <!-- SKILLS / RESUME -->
+        <section id="skills" class="skills" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading" class="section-title">Skills & Resume</h2>
+
+                <div class="timeline" role="list">
+                    <div class="timeline__item" role="listitem">
+                        <time datetime="2028">2028</time>
+                        <div>
+                            <strong>Editor System Design</strong>
+                            <p>Architected plugin runtime and UX integration patterns.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item" role="listitem">
+                        <time datetime="2023">2023</time>
+                        <div>
+                            <strong>Open Source Stewardship</strong>
+                            <p>Maintained cross-platform editor modules and docs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-bars" aria-hidden="false" aria-label="Skill levels">
+                    <div class="skill">
+                        <div class="skill__label">Frontend Engineering</div>
+                        <div class="skill__bar" style="--value:92%"><span class="sr-only">92%</span></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__label">Editor Architecture</div>
+                        <div class="skill__bar" style="--value:86%"><span class="sr-only">86%</span></div>
+                    </div>
+                </div>
+
+                <p>
+                    <a class="btn btn--primary" href="assets/data/cv.pdf" download>Download CV</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section-title">Contact</h2>
+                <p class="section-lead">For partnerships, hiring inquiries, or open-source collaboration — reach out.
+                </p>
+
+                <!-- Accessible contact form that degrades to mailto fallback (static HTML) -->
+                <form class="contact-form" action="mailto:contact@goosoft.com" method="post" enctype="text/plain"
+                    aria-label="Contact form">
+                    <div class="form-row">
+                        <label for="contact-name">Name</label>
+                        <input id="contact-name" name="name" type="text" required />
+                    </div>
+
+                    <div class="form-row">
+                        <label for="contact-email">Email</label>
+                        <input id="contact-email" name="email" type="email" required />
+                    </div>
+
+                    <div class="form-row">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <button class="btn btn--primary" type="submit">Send Message</button>
+                        <a class="btn btn--outline" href="mailto:contact@goosoft.com">Or email directly</a>
+                    </div>
+                </form>
+
+                <div class="contact__meta">
+                    <p>Company: GooSoft</p>
+                    <p>Email: <a href="mailto:contact@goosoft.com">contact@goosoft.com</a></p>
+                    <p>Links: <a href="https://github.com/goosoft">GitHub</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container site-footer__inner">
+            <p class="site-footer__copyright">© <time datetime="2025">2025</time> GooSoft. All rights reserved.</p>
+            <nav class="site-footer__nav" role="navigation" aria-label="Footer">
+                <a href="/privacy.html">Privacy</a>
+                <a href="/terms.html">Terms</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Accessible modal: content will be injected from <details> when JS is enabled -->
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title"
+        hidden>
+        <div class="modal__overlay" data-dismiss-modal tabindex="-1"></div>
+        <div class="modal__panel" role="document">
+            <button id="modalClose" class="modal__close" aria-label="Close dialog">&times;</button>
+            <div id="modalContent" class="modal__content" tabindex="0"></div>
+        </div>
+    </div>
+
+    <!-- Small no-js hint for users without JS (keeps progressive enhancement clear) -->
+    <noscript>
+        <style>
+            .nav {
+                display: block;
+            }
+        </style>
+    </noscript>
+
+    <!-- Non-blocking script -->
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
